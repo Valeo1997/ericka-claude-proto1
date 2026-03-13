@@ -80,7 +80,7 @@ export const VoiceCallModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: 
     try {
       setStatus('connecting');
       setTranscript('');
-      const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+      const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
       const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 16000 });
       audioContextRef.current = audioCtx;

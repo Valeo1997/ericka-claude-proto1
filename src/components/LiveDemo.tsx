@@ -3,7 +3,7 @@ import { MessageSquare, Send, Loader2, PhoneCall, Bot, Sparkles } from 'lucide-r
 import { motion } from 'motion/react';
 import { GoogleGenAI, Type, FunctionDeclaration } from '@google/genai';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const bookCustomerFunction: FunctionDeclaration = {
   name: 'bookCustomer',

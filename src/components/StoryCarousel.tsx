@@ -4,7 +4,7 @@ import { GoogleGenAI } from '@google/genai';
 import { Loader2, Sparkles, Plus } from 'lucide-react';
 import { get, set } from 'idb-keyval';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const STORY_PROMPTS = [
   "A frustrated customer on the phone at night, dark room, looking stressed, looking out a window showing closed shops and dark streets, cinematic lighting, highly detailed.",
