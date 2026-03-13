@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-navy-slate: #050b14;
+  --color-electric-blue: #2d8eff;
+  --color-soft-white: #f0f4ff;
+  --color-cool-gray: #8a9bb0;
+  --color-slate-blue: #111d2e;
+  --color-ember-red: #ff4c4c;
+  --color-amber-gold: #f5a623;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Anton", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .mesh-gradient {
+    background-color: #050b14;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(45, 142, 255, 0.1) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(30, 58, 95, 0.15) 0px, transparent 50%),
+      radial-gradient(at 50% 50%, rgba(45, 142, 255, 0.05) 0px, transparent 50%);
+    background-size: 200% 200%;
+    animation: mesh-shift 15s ease infinite;
+  }
+
+  @keyframes mesh-shift {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+
+  .border-beam {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .border-beam::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: conic-gradient(from 0deg, transparent, var(--color-electric-blue), transparent 25%);
+    animation: beam-rotate 4s linear infinite;
+    border-radius: inherit;
+    z-index: -1;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    padding: 2px;
+  }
+
+  @keyframes beam-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .glass-panel-heavy {
+    background: rgba(5, 11, 20, 0.9);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(45, 142, 255, 0.1);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 30px rgba(45, 142, 255, 0.4);
+  }
+
+  .glow-red {
+    box-shadow: 0 0 30px rgba(255, 76, 76, 0.4);
+  }
+
+  .text-glow-blue {
+    text-shadow: 0 0 20px rgba(45, 142, 255, 0.6);
+  }
+
+  .ticker-track {
+    display: flex;
+    width: fit-content;
+    animation: ticker 60s linear infinite;
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+body {
+  background-color: #09090b;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

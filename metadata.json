@@ -1,0 +1,7 @@
+{
+  "name": "Erica: Your AI Dispatcher",
+  "description": "Meet Erica—she handles your calls, so you can handle the pipes. AI-powered phone, booking, and email assistant built exclusively for plumbing companies.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
