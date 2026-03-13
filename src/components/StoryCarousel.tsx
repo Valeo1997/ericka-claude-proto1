@@ -8,8 +8,8 @@ const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const STORY_PROMPTS = [
   "A woman in her mid 30s, sitting on a couch in a cozy well-lit living room at night, holding a smartphone to her ear, worried expression on her face, wearing casual pajamas, warm lamp light in the background, normal suburban home interior, realistic photography style, no dark or dystopian elements.",
-  "A glowing blue holographic wireframe female figure labeled ERICA floating in a futuristic server room, surrounded by data screens and neon blue light, professional and powerful AI assistant energy, fully clothed digital form, cinematic, highly detailed.",
-  "A friendly male plumber in a blue uniform shirt standing in front of a suburban house in bright morning sunlight, holding copper pipes in one hand and a yellow torch in the other, smiling confidently at the camera, service van parked in driveway behind him, realistic photo style, warm golden hour lighting."
+  "A glowing blue female humanoid figure made entirely of light particles and wireframe mesh, standing upright with arms slightly open, centered in a dark server room corridor with racks of servers on both sides glowing with neon blue and pink lights, the word ERICA displayed above her head as a holographic label, wide shot, cinematic, highly detailed digital art.",
+  "A confident male plumber in his 30s, wearing a blue button-up work uniform, standing in a driveway in front of a large suburban house at golden hour morning, holding 3 copper pipes in his left hand and a yellow Bernzomatic blowtorch in his right hand, smiling directly at the camera, white service van visible behind him, photorealistic, sharp and vivid."
 ];
 
 const STORY_CAPTIONS = [
