@@ -8,7 +8,7 @@ const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const STORY_PROMPTS = [
   "A woman in her mid 30s, sitting on a couch in a cozy well-lit living room at night, holding a smartphone to her ear, worried expression on her face, wearing casual pajamas, warm lamp light in the background, normal suburban home interior, realistic photography style, no dark or dystopian elements.",
-  "Abstract AI technology visualization, glowing blue neural network data streams, floating holographic UI panels with phone call data and calendar bookings, no human figures, futuristic digital command center aesthetic, deep dark blue background, highly detailed.",
+  "A glowing blue holographic wireframe female figure labeled ERICA floating in a futuristic server room, surrounded by data screens and neon blue light, professional and powerful AI assistant energy, fully clothed digital form, cinematic, highly detailed.",
   "A friendly male plumber in a blue uniform shirt standing in front of a suburban house in bright morning sunlight, holding copper pipes in one hand and a yellow torch in the other, smiling confidently at the camera, service van parked in driveway behind him, realistic photo style, warm golden hour lighting."
 ];
 
