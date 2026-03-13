@@ -210,6 +210,18 @@ export const StoryCarousel = () => {
           )}
         </div>
         
+        {!isGenerating && currentImages.length === 3 && imageSets.length < MAX_SETS && (
+          <div className="mt-6 text-center">
+            <button
+              onClick={generateImages}
+              className="px-6 py-3 bg-white/5 hover:bg-electric-blue/10 border border-white/10 hover:border-electric-blue/40 text-slate-400 hover:text-electric-blue font-bold uppercase tracking-wider rounded-lg transition-all flex items-center gap-2 mx-auto"
+            >
+              <Sparkles size={16} />
+              Generate New Set
+            </button>
+          </div>
+        )}
+
         {error && imageSets.length > 0 && (
           <div className="mt-6 max-w-2xl mx-auto text-center">
             <p className="text-red-400 text-sm bg-red-400/10 p-4 rounded-lg border border-red-400/20">
