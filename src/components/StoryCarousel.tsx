@@ -7,9 +7,9 @@ import { get, set } from 'idb-keyval';
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const STORY_PROMPTS = [
-  "A frustrated customer on the phone at night, dark room, looking stressed, looking out a window showing closed shops and dark streets, cinematic lighting, highly detailed.",
+  "A homeowner sitting on their couch at night looking worried and stressed, holding a phone to their ear, warm lamp light in the background, cozy home interior, concerned but not scary, soft cinematic lighting, highly detailed.",
   "A futuristic glowing AI assistant named Erica processing data, glowing blue and neon lights, digital interface, highly detailed, conceptual representation of an AI agent in action.",
-  "A friendly HVAC technician arriving at a house in the bright morning sunlight, holding two or three copper pipes in his left hand, and a yellow Bernzomatic blowtorch in his right hand, smiling, bright and optimistic lighting, highly detailed."
+  "A friendly plumber arriving at a suburban house in bright morning sunlight, wearing a blue uniform, smiling and waving at the front door, holding a toolbox, cheerful and optimistic, warm morning light, highly detailed."
 ];
 
 const STORY_CAPTIONS = [
@@ -148,25 +148,23 @@ export const StoryCarousel = () => {
                   alt={STORY_CAPTIONS[currentIndex]}
                   className="w-full h-full object-cover"
                 />
-                {currentIndex !== 2 && (
-                  <>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                      <motion.div
-                        initial={{ y: 20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ delay: 0.4 }}
-                      >
-                        <p className="text-electric-blue font-black tracking-[0.2em] uppercase text-sm mb-2">
-                          Step {currentIndex + 1} of 3
-                        </p>
-                        <h3 className="text-3xl md:text-5xl font-display uppercase text-white">
-                          {STORY_CAPTIONS[currentIndex]}
-                        </h3>
-                      </motion.div>
-                    </div>
-                  </>
-                )}
+                <>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+                    <motion.div
+                      initial={{ y: 20, opacity: 0 }}
+                      animate={{ y: 0, opacity: 1 }}
+                      transition={{ delay: 0.4 }}
+                    >
+                      <p className="text-electric-blue font-black tracking-[0.2em] uppercase text-sm mb-2">
+                        Step {currentIndex + 1} of 3
+                      </p>
+                      <h3 className="text-3xl md:text-5xl font-display uppercase text-white">
+                        {STORY_CAPTIONS[currentIndex]}
+                      </h3>
+                    </motion.div>
+                  </div>
+                </>
               </motion.div>
             </AnimatePresence>
           ) : (
