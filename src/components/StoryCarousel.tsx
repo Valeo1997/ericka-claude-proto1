@@ -7,9 +7,9 @@ import { get, set } from 'idb-keyval';
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const STORY_PROMPTS = [
-  "A homeowner sitting on their couch at night looking worried and stressed, holding a phone to their ear, warm lamp light in the background, cozy home interior, concerned but not scary, soft cinematic lighting, highly detailed.",
-  "A futuristic glowing AI assistant named Erica processing data, glowing blue and neon lights, digital interface, highly detailed, conceptual representation of an AI agent in action.",
-  "A friendly plumber arriving at a suburban house in bright morning sunlight, wearing a blue uniform, smiling and waving at the front door, holding a toolbox, cheerful and optimistic, warm morning light, highly detailed."
+  "A real woman in her 30s sitting on a couch at night, stressed and worried, holding a phone to her ear, warm lamp light, cozy living room, water dripping in the background from a pipe, realistic photo style, soft cinematic lighting.",
+  "Abstract AI technology visualization, glowing blue neural network data streams, floating holographic UI panels with phone call data and calendar bookings, no human figures, futuristic digital command center aesthetic, deep dark blue background, highly detailed.",
+  "A friendly male plumber in a blue uniform shirt standing in front of a suburban house in bright morning sunlight, holding copper pipes in one hand and a yellow torch in the other, smiling confidently at the camera, service van parked in driveway behind him, realistic photo style, warm golden hour lighting."
 ];
 
 const STORY_CAPTIONS = [
@@ -101,7 +101,11 @@ export const StoryCarousel = () => {
       setImageSets(updatedSets);
       setActiveSetIndex(updatedSets.length - 1);
       setCurrentIndex(0);
-      await set('erica_story_sets', updatedSets);
+      try {
+        await set('erica_story_sets', updatedSets);
+      } catch (storageErr) {
+        console.warn("Could not cache images (storage full), images will still display this session.", storageErr);
+      }
     } catch (err: any) {
       console.error("Image generation error:", err);
       setError(err.message || "Failed to generate images. Please try again.");
