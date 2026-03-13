@@ -26,7 +26,7 @@ export const Hero = () => {
           >
             <div className="inline-flex items-center gap-3 px-6 py-2 rounded-full glass-panel border-white/10 mb-12 shadow-[0_0_20px_rgba(45,142,255,0.1)]">
               <div className="w-2.5 h-2.5 rounded-full bg-electric-blue animate-pulse-soft" />
-              <span className="text-[10px] uppercase tracking-[0.4em] font-black text-soft-white">Erica is Online & Ready</span>
+              <span className="text-[10px] uppercase tracking-[0.4em] font-black text-soft-white">Ericka is Online & Ready</span>
             </div>
 
             <h1 className="text-6xl md:text-9xl font-display uppercase leading-[0.9] mb-10 tracking-tight text-soft-white">
@@ -36,13 +36,13 @@ export const Hero = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-cool-gray max-w-3xl mx-auto mb-14 leading-relaxed font-medium">
-              Meet Erica—she handles your calls, so you can handle the pipes. 
+              Meet Ericka—she handles your calls, so you can handle the pipes. 
               She's your 24/7 AI Dispatcher, built exclusively for plumbing companies to answer calls, schedule appointments, and reply to emails.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-24">
               <a href="#live-demo" className="bg-electric-blue hover:bg-blue-600 text-white px-12 py-6 rounded-[2rem] text-lg font-black uppercase tracking-widest transition-all glow-blue shadow-[0_0_40px_rgba(45,142,255,0.3)] flex items-center justify-center gap-3 group">
-                Meet Erica <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+                Meet Ericka <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </a>
               <a href="#live-demo" className="glass-panel hover:bg-white/10 text-soft-white px-12 py-6 rounded-[2rem] text-lg font-black uppercase tracking-widest transition-all border border-white/10 flex items-center justify-center">
                 Try Live Demo

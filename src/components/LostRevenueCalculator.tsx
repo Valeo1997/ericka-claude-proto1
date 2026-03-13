@@ -188,7 +188,7 @@ export const LostRevenueCalculator = () => {
 
                     <div className="bg-electric-blue/10 border border-electric-blue/20 rounded-2xl p-6 text-center">
                       <p className="text-soft-white font-medium">
-                        Erica can capture that <strong className="text-electric-blue">${lostRevenuePerYear.toLocaleString()}</strong> for a fraction of the cost of a human dispatcher.
+                        Ericka can capture that <strong className="text-electric-blue">${lostRevenuePerYear.toLocaleString()}</strong> for a fraction of the cost of a human dispatcher.
                       </p>
                     </div>
 
@@ -214,7 +214,7 @@ export const LostRevenueCalculator = () => {
                     <div className="text-center mb-10">
                       <h3 className="text-2xl font-display uppercase tracking-tight text-soft-white mb-4">Stop The Bleeding</h3>
                       <p className="text-cool-gray text-sm font-medium">
-                        Enter your details below to get a custom breakdown of how Erica will plug the holes in your leaky bucket.
+                        Enter your details below to get a custom breakdown of how Ericka will plug the holes in your leaky bucket.
                       </p>
                     </div>
                     

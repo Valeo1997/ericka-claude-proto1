@@ -8,13 +8,13 @@ const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 const STORY_PROMPTS = [
   "A woman in her mid 30s, sitting on a couch in a cozy well-lit living room at night, holding a smartphone to her ear, worried expression on her face, wearing casual pajamas, warm lamp light in the background, normal suburban home interior, realistic photography style, no dark or dystopian elements.",
-  "A glowing blue female humanoid figure made entirely of light particles and wireframe mesh, standing upright with arms slightly open, centered in a dark server room corridor with racks of servers on both sides glowing with neon blue and pink lights, the word ERICA displayed above her head as a holographic label, wide shot, cinematic, highly detailed digital art.",
+  "A glowing blue female humanoid figure made entirely of light particles and wireframe mesh, standing upright with arms slightly open, centered in a dark server room corridor with racks of servers on both sides glowing with neon blue and pink lights, the word ERICKA displayed above her head as a holographic label, wide shot, cinematic, highly detailed digital art.",
   "A confident male plumber in his 30s, wearing a blue button-up work uniform, standing in a driveway in front of a large suburban house at golden hour morning, holding 3 copper pipes in his left hand and a yellow Bernzomatic blowtorch in his right hand, smiling directly at the camera, white service van visible behind him, photorealistic, sharp and vivid."
 ];
 
 const STORY_CAPTIONS = [
   "3:00 AM: The Emergency Call",
-  "3:01 AM: Erica Springs Into Action",
+  "3:01 AM: Ericka Springs Into Action",
   "8:00 AM: The Technician Arrives"
 ];
 
@@ -119,10 +119,10 @@ export const StoryCarousel = () => {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-6xl font-display uppercase tracking-tight text-white mb-6">
-            The <span className="text-electric-blue">Erica</span> Difference
+            The <span className="text-electric-blue">Ericka</span> Difference
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
-            See how Erica transforms a late-night emergency into a morning success story.
+            See how Ericka transforms a late-night emergency into a morning success story.
           </p>
         </div>
 
@@ -179,7 +179,7 @@ export const StoryCarousel = () => {
                 </div>
                 <h3 className="text-2xl font-display uppercase text-white">Experience the Story</h3>
                 <p className="text-slate-400 max-w-md mx-auto mb-4">
-                  Click below to generate a custom AI storyboard showing how Erica handles a late-night emergency.
+                  Click below to generate a custom AI storyboard showing how Ericka handles a late-night emergency.
                 </p>
                 <button 
                   onClick={generateImages}

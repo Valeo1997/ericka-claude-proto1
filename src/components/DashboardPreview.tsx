@@ -20,7 +20,7 @@ export const DashboardPreview = () => {
               Built for <span className="text-electric-blue">Plumbers.</span>
             </h2>
             <p className="text-xl text-cool-gray leading-relaxed mb-12 font-medium">
-              Your Erica dashboard shows every call, every lead, and every booked job — in real time. 
+              Your Ericka dashboard shows every call, every lead, and every booked job — in real time. 
               Know exactly what's coming in before you even pick up a wrench.
             </p>
             <ul className="space-y-8">
@@ -58,11 +58,11 @@ export const DashboardPreview = () => {
                 <div className="relative group cursor-help">
                   <div className="flex items-center gap-3 px-4 py-1.5 rounded-full bg-electric-blue/10 border border-electric-blue/20">
                     <div className="w-2 h-2 rounded-full bg-electric-blue animate-pulse" />
-                    <span className="text-[10px] font-black text-electric-blue uppercase tracking-[0.2em]">Erica Active</span>
+                    <span className="text-[10px] font-black text-electric-blue uppercase tracking-[0.2em]">Ericka Active</span>
                   </div>
                   {/* Tooltip */}
                   <div className="absolute bottom-full right-0 mb-3 w-56 p-4 glass-panel-heavy rounded-2xl border border-electric-blue/30 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20 shadow-2xl">
-                    <p className="text-[10px] text-soft-white leading-relaxed font-bold uppercase tracking-widest">Erica is currently monitoring your lines and booking jobs in real-time.</p>
+                    <p className="text-[10px] text-soft-white leading-relaxed font-bold uppercase tracking-widest">Ericka is currently monitoring your lines and booking jobs in real-time.</p>
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export const DashboardPreview = () => {
                     <h4 className="text-5xl font-display text-soft-white">$3,240 <span className="text-sm text-green-500 font-black tracking-widest ml-2">+12%</span></h4>
                     {/* Tooltip */}
                     <div className="absolute top-full left-0 mt-3 w-64 p-4 glass-panel-heavy rounded-2xl border border-electric-blue/30 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20 shadow-2xl">
-                      <p className="text-[10px] text-soft-white leading-relaxed font-bold uppercase tracking-widest">Total revenue from jobs successfully booked and confirmed by Erica AI today.</p>
+                      <p className="text-[10px] text-soft-white leading-relaxed font-bold uppercase tracking-widest">Total revenue from jobs successfully booked and confirmed by Ericka AI today.</p>
                     </div>
                   </div>
                   <div className="h-16 w-40 bg-electric-blue/5 rounded-2xl border border-white/5" />
@@ -85,7 +85,7 @@ export const DashboardPreview = () => {
                   {[
                     { name: "John Smith", issue: "Burst Pipe — Emergency", status: "Urgent", color: "text-ember-red", bg: "bg-ember-red/10", tooltip: "Emergency call handled at 2:14 AM. Dispatch notified immediately." },
                     { name: "Sarah Miller", issue: "Water Heater Install", status: "Booked", color: "text-green-500", bg: "bg-green-500/10", tooltip: "Job booked via online calendar sync. Customer received confirmation email." },
-                    { name: "Mike Johnson", issue: "Drain Cleaning", status: "Pending", color: "text-amber-gold", bg: "bg-amber-gold/10", tooltip: "Customer inquiring about rates. Erica provided quote and is awaiting confirmation." }
+                    { name: "Mike Johnson", issue: "Drain Cleaning", status: "Pending", color: "text-amber-gold", bg: "bg-amber-gold/10", tooltip: "Customer inquiring about rates. Ericka provided quote and is awaiting confirmation." }
                   ].map((row, i) => (
                     <div key={i} className="relative group">
                       <div className="flex items-center justify-between p-5 glass-panel rounded-2xl border border-white/5 hover:border-electric-blue/30 transition-all cursor-help group-hover:bg-white/5">

@@ -23,13 +23,13 @@ export const Emergency = () => {
             </h2>
             <p className="text-xl text-cool-gray leading-relaxed mb-12 font-medium">
               A burst pipe at 2:00 AM isn't just a job — it's a high-ticket emergency. 
-              Erica is trained to identify urgency instantly, flag the call, and ensure your on-call team is notified before the customer calls your competitor.
+              Ericka is trained to identify urgency instantly, flag the call, and ensure your on-call team is notified before the customer calls your competitor.
             </p>
             <div className="space-y-8">
               {[
-                { title: "Urgency Detection", desc: "Erica listens for keywords like 'flood', 'burst', or 'emergency'." },
+                { title: "Urgency Detection", desc: "Ericka listens for keywords like 'flood', 'burst', or 'emergency'." },
                 { title: "Instant Escalation", desc: "Emergency leads are texted and emailed to your team with a red-alert status." },
-                { title: "24/7/365 Coverage", desc: "No more sleeping through your ringer. Erica is always awake." }
+                { title: "24/7/365 Coverage", desc: "No more sleeping through your ringer. Ericka is always awake." }
               ].map((item, i) => (
                 <div key={i} className="flex gap-6 group">
                   <div className="w-14 h-14 rounded-2xl bg-ember-red/10 flex items-center justify-center shrink-0 group-hover:bg-ember-red/20 transition-colors">
@@ -70,7 +70,7 @@ export const Emergency = () => {
                   <p className="text-soft-white font-medium italic text-lg leading-relaxed">"My basement is flooding! The main pipe just burst and I can't find the shutoff valve!"</p>
                 </div>
                 <div className="bg-ember-red/5 rounded-3xl p-8 border border-ember-red/10">
-                  <p className="text-ember-red text-[10px] uppercase font-black tracking-widest mb-4">Erica's Response</p>
+                  <p className="text-ember-red text-[10px] uppercase font-black tracking-widest mb-4">Ericka's Response</p>
                   <p className="text-soft-white font-medium text-lg leading-relaxed">"I understand this is an emergency, I'm flagging this for our on-call technician right now. Can you confirm your address?"</p>
                 </div>
               </div>

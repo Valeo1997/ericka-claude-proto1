@@ -29,7 +29,7 @@ export const Navbar = () => {
             <Droplets className="text-white w-7 h-7" />
           </div>
           <div className="flex flex-col">
-            <span className="text-3xl font-display uppercase tracking-tighter text-soft-white leading-none">Erica</span>
+            <span className="text-3xl font-display uppercase tracking-tighter text-soft-white leading-none">Ericka</span>
             <span className="text-[9px] font-black uppercase tracking-[0.4em] text-electric-blue leading-none mt-1">AI Dispatcher</span>
           </div>
         </Link>

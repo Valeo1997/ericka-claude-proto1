@@ -35,50 +35,50 @@ export const Features = () => {
           <FeatureCard 
             icon={Phone}
             title="Answers Every Call"
-            description="Never send a customer to voicemail again. Erica answers 24/7, speaks naturally, and represents your brand with professionalism every single time."
+            description="Never send a customer to voicemail again. Ericka answers 24/7, speaks naturally, and represents your brand with professionalism every single time."
             isLight
           />
           <FeatureCard 
             icon={Calendar}
             title="Books Appointments"
-            description="Erica syncs with your schedule and books jobs in real time. No double-bookings, no back-and-forth — just confirmed appointments."
+            description="Ericka syncs with your schedule and books jobs in real time. No double-bookings, no back-and-forth — just confirmed appointments."
             isLight
           />
           <FeatureCard 
             icon={Mail}
             title="Replies to Emails"
-            description="From quote requests to follow-ups, Erica manages your inbox and responds promptly so no lead goes cold."
+            description="From quote requests to follow-ups, Ericka manages your inbox and responds promptly so no lead goes cold."
             isLight
           />
           <FeatureCard 
             icon={BarChart3}
             title="Tracks Every Lead"
-            description="Every call, booking, and email is logged in your Erica dashboard — your personal mission control."
+            description="Every call, booking, and email is logged in your Ericka dashboard — your personal mission control."
             isLight
           />
           <FeatureCard 
             icon={Zap}
             title="Always Improving"
-            description="Erica learns your business. The more she works for you, the sharper and more accurate she gets."
+            description="Ericka learns your business. The more she works for you, the sharper and more accurate she gets."
             isLight
           />
           <div className="bg-navy-slate p-8 rounded-3xl flex flex-col justify-center items-center text-center border border-white/10 group hover:scale-[1.02] transition-transform">
             <Mic2 className="text-electric-blue mb-4 animate-pulse-soft" size={40} />
             <h3 className="text-xl font-bold text-soft-white mb-2">Custom Voice Cloning</h3>
-            <p className="text-cool-gray text-sm">Make Erica sound exactly like your best office manager.</p>
+            <p className="text-cool-gray text-sm">Make Ericka sound exactly like your best office manager.</p>
           </div>
         </div>
 
-        {/* Erica in Action Mockup */}
+        {/* Ericka in Action Mockup */}
         <div className="mt-24 max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h3 className="text-2xl font-black text-navy-slate mb-4 italic">"Erica, handle my calls for the next 2 hours."</h3>
+            <h3 className="text-2xl font-black text-navy-slate mb-4 italic">"Ericka, handle my calls for the next 2 hours."</h3>
             <p className="text-slate-500 font-medium">Real-time control from your phone.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
               <div className="bg-white p-4 rounded-2xl shadow-lg border border-black/5 max-w-[80%]">
-                <p className="text-xs font-bold text-electric-blue mb-1">Erica AI</p>
+                <p className="text-xs font-bold text-electric-blue mb-1">Ericka AI</p>
                 <p className="text-sm text-navy-slate">"I've just booked a water heater repair for tomorrow at 9:00 AM with Mr. Henderson. I've sent the details to your calendar."</p>
               </div>
               <div className="bg-electric-blue p-4 rounded-2xl shadow-lg max-w-[80%] ml-auto text-white">
@@ -86,7 +86,7 @@ export const Features = () => {
                 <p className="text-sm">"Perfect. Flag any emergencies to my cell directly."</p>
               </div>
               <div className="bg-white p-4 rounded-2xl shadow-lg border border-black/5 max-w-[80%]">
-                <p className="text-xs font-bold text-electric-blue mb-1">Erica AI</p>
+                <p className="text-xs font-bold text-electric-blue mb-1">Ericka AI</p>
                 <p className="text-sm text-navy-slate">"Understood. Emergency protocol active. I'll only interrupt you for high-priority jobs."</p>
               </div>
             </div>

@@ -63,7 +63,7 @@ export const Pricing = () => {
             target="Solo operators or small shops"
             coreValue="Stop losing money to missed calls"
             features={[
-              "24/7 Erica AI Receptionist",
+              "24/7 Ericka AI Receptionist",
               "Intelligent Lead Capture",
               "The Live Dispatch Dashboard",
               "Instant SMS Alerts"

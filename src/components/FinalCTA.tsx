@@ -28,7 +28,7 @@ export const FinalCTA = () => {
           </h2>
           <p className="text-2xl md:text-3xl text-soft-white/80 max-w-3xl mx-auto mb-16 font-medium leading-relaxed">
             Join 500+ plumbing companies who never miss a lead. 
-            Get Erica on your team today.
+            Get Ericka on your team today.
           </p>
           <div className="flex flex-col sm:flex-row gap-8 justify-center">
             <button className="bg-electric-blue hover:bg-blue-600 text-white px-16 py-8 rounded-[2.5rem] text-2xl font-black uppercase tracking-widest transition-all glow-blue shadow-[0_0_50px_rgba(45,142,255,0.4)] flex items-center justify-center gap-4 group">

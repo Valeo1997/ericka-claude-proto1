@@ -50,7 +50,7 @@ export const ChatWindow = ({ onOpenCall }: { onOpenCall?: () => void }) => {
     {
       id: 'welcome',
       role: 'model',
-      text: "Hi! I'm Erica, your AI Dispatcher. How can I help you today? If you need to book an appointment, just let me know!",
+      text: "Hi! I'm Ericka, your AI Dispatcher. How can I help you today? If you need to book an appointment, just let me know!",
     }
   ]);
   const [input, setInput] = useState('');
@@ -73,7 +73,7 @@ export const ChatWindow = ({ onOpenCall }: { onOpenCall?: () => void }) => {
         const session = ai.chats.create({
           model: 'gemini-3-flash-preview',
           config: {
-            systemInstruction: `You are Erica, a professional and helpful AI Dispatcher for a plumbing company. 
+            systemInstruction: `You are Ericka, a professional and helpful AI Dispatcher for a plumbing company. 
 Your goal is to help customers and book appointments. 
 To book an appointment, you MUST gather the following 5 pieces of information from the customer:
 1. First Name
@@ -267,7 +267,7 @@ Be polite, concise, and professional.`,
                   <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 rounded-full border-2 border-navy-slate" />
                 </div>
                 <div>
-                  <h3 className="text-soft-white font-bold text-sm">Erica AI</h3>
+                  <h3 className="text-soft-white font-bold text-sm">Ericka AI</h3>
                   <div className="flex items-center gap-1.5">
                     <p className="text-electric-blue text-[10px] font-black uppercase tracking-widest">Online</p>
                     <span className="text-white/20 text-[10px]">•</span>
@@ -282,7 +282,7 @@ Be polite, concise, and professional.`,
                   <button 
                     onClick={onOpenCall}
                     className="text-green-400 hover:text-green-300 bg-green-400/10 hover:bg-green-400/20 transition-colors p-2 rounded-full"
-                    title="Call Erica"
+                    title="Call Ericka"
                   >
                     <PhoneCall size={18} />
                   </button>
@@ -324,7 +324,7 @@ Be polite, concise, and professional.`,
                 <div className="flex justify-start">
                   <div className="bg-white text-gray-900 p-3 rounded-2xl rounded-bl-sm shadow-sm flex items-center gap-2">
                     <Loader2 className="w-4 h-4 animate-spin text-electric-blue" />
-                    <span className="text-xs text-gray-600 font-medium">Erica is typing...</span>
+                    <span className="text-xs text-gray-600 font-medium">Ericka is typing...</span>
                   </div>
                 </div>
               )}

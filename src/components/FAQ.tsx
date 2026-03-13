@@ -43,21 +43,21 @@ export const FAQ = () => {
         <div className="text-center mb-24">
           <span className="text-electric-blue font-black tracking-[0.4em] uppercase text-[10px] mb-6 block">← FAQ</span>
           <h2 className="text-5xl md:text-8xl font-display uppercase leading-none mb-10 text-soft-white">Questions?</h2>
-          <p className="text-cool-gray text-xl font-medium">Running a plumbing business is already complicated enough — Erica makes this part simple.</p>
+          <p className="text-cool-gray text-xl font-medium">Running a plumbing business is already complicated enough — Ericka makes this part simple.</p>
         </div>
 
         <div className="space-y-6">
           <FAQItem 
-            question="Does Erica sound like a robot?"
-            answer="Not at all. Erica is trained to speak naturally and professionally, using your company's name and tone. Most customers won't know they're speaking to AI."
+            question="Does Ericka sound like a robot?"
+            answer="Not at all. Ericka is trained to speak naturally and professionally, using your company's name and tone. Most customers won't know they're speaking to AI."
           />
           <FAQItem 
             question="What happens if a customer has a complex question?"
-            answer="Erica handles common questions and booking seamlessly. For complex situations, she collects the information and escalates to your team immediately."
+            answer="Ericka handles common questions and booking seamlessly. For complex situations, she collects the information and escalates to your team immediately."
           />
           <FAQItem 
-            question="Will Erica work with my existing calendar?"
-            answer="Yes. Erica integrates with most scheduling tools used in the trades industry (ServiceTitan, Jobber, Housecall Pro, etc.)."
+            question="Will Ericka work with my existing calendar?"
+            answer="Yes. Ericka integrates with most scheduling tools used in the trades industry (ServiceTitan, Jobber, Housecall Pro, etc.)."
           />
           <FAQItem 
             question="Is there a contract?"
@@ -65,7 +65,7 @@ export const FAQ = () => {
           />
           <FAQItem 
             question="How fast can I get set up?"
-            answer="Most plumbing companies are live with Erica within 24–48 hours of signing up."
+            answer="Most plumbing companies are live with Ericka within 24–48 hours of signing up."
           />
         </div>
       </div>

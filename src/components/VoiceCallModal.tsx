@@ -103,7 +103,7 @@ export const VoiceCallModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: 
           speechConfig: {
             voiceConfig: { prebuiltVoiceConfig: { voiceName: "Kore" } },
           },
-          systemInstruction: "You are Erica, a professional AI Dispatcher for a plumbing company. Keep your responses concise and conversational. Ask for First Name, Last Name, Email, Phone, and Address to book an appointment.",
+          systemInstruction: "You are Ericka, a professional AI Dispatcher for a plumbing company. Keep your responses concise and conversational. Ask for First Name, Last Name, Email, Phone, and Address to book an appointment.",
           tools: [{ functionDeclarations: [bookCustomerFunction] }],
         },
         callbacks: {
@@ -238,7 +238,7 @@ export const VoiceCallModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: 
           <div className="absolute inset-0 bg-gradient-to-b from-electric-blue/10 to-transparent pointer-events-none" />
           
           <div className="p-8 flex flex-col items-center text-center relative z-10">
-            <h3 className="text-white font-display text-2xl mb-1">Erica AI</h3>
+            <h3 className="text-white font-display text-2xl mb-1">Ericka AI</h3>
             <p className="text-electric-blue text-sm font-bold uppercase tracking-widest mb-12">
               {status === 'connecting' ? 'Connecting...' : status === 'connected' ? 'Call in Progress' : status === 'error' ? 'Connection Error' : 'Call Ended'}
             </p>

@@ -35,7 +35,7 @@ export const SuccessStory = () => {
             {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="text-amber-gold fill-amber-gold" size={24} />)}
           </div>
           <h3 className="text-3xl md:text-5xl font-display uppercase leading-tight mb-12 italic text-white">
-            "Erica paid for herself in the first 48 hours. She caught a <span className="text-electric-blue"> $4,500 emergency slab leak </span> at 3:00 AM while I was fast asleep. I woke up to a booked job and a happy customer."
+            "Ericka paid for herself in the first 48 hours. She caught a <span className="text-electric-blue"> $4,500 emergency slab leak </span> at 3:00 AM while I was fast asleep. I woke up to a booked job and a happy customer."
           </h3>
           <div className="mb-12">
             <p className="text-white font-display uppercase text-2xl mb-2">Mike Henderson</p>

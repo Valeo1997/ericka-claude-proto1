@@ -40,7 +40,7 @@ export const HowItWorks = () => {
             <span className="text-electric-blue">Booked Job</span> in 60s.
           </h2>
           <p className="text-cool-gray max-w-2xl text-xl font-medium">
-            Erica handles the front desk so your crew can focus on the work.
+            Ericka handles the front desk so your crew can focus on the work.
           </p>
         </div>
 
@@ -52,13 +52,13 @@ export const HowItWorks = () => {
           />
           <StepCard 
             number="02" 
-            title="Erica Answers" 
-            description="Erica picks up in seconds, greets them professionally in your company's name." 
+            title="Ericka Answers" 
+            description="Ericka picks up in seconds, greets them professionally in your company's name." 
           />
           <StepCard 
             number="03" 
             title="Job Booked" 
-            description="Erica qualifies the lead, captures their info, and schedules the job directly into your calendar." 
+            description="Ericka qualifies the lead, captures their info, and schedules the job directly into your calendar." 
             isPayoff
           />
           <StepCard 
@@ -69,7 +69,7 @@ export const HowItWorks = () => {
           <StepCard 
             number="05" 
             title="You Show Up" 
-            description="Walk in prepared. Erica already handled the rest. Collect your payment." 
+            description="Walk in prepared. Ericka already handled the rest. Collect your payment." 
           />
         </div>
       </div>

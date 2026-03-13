@@ -32,7 +32,7 @@ export const LiveDemo = ({ onOpenCall }: { onOpenCall?: () => void }) => {
     {
       id: 'welcome',
       role: 'model',
-      text: "Hi! I'm Erica, your AI Dispatcher. I handle calls 24/7 so you don't have to. Try booking a mock appointment with me right now!",
+      text: "Hi! I'm Ericka, your AI Dispatcher. I handle calls 24/7 so you don't have to. Try booking a mock appointment with me right now!",
     }
   ]);
   const [input, setInput] = useState('');
@@ -54,7 +54,7 @@ export const LiveDemo = ({ onOpenCall }: { onOpenCall?: () => void }) => {
         const session = ai.chats.create({
           model: 'gemini-3-flash-preview',
           config: {
-            systemInstruction: `You are Erica, a professional and helpful AI Dispatcher for a plumbing and HVAC company. 
+            systemInstruction: `You are Ericka, a professional and helpful AI Dispatcher for a plumbing and HVAC company. 
 Your goal is to demonstrate your capabilities to a potential buyer by helping them book a mock appointment. 
 To book an appointment, you MUST gather the following 5 pieces of information:
 1. First Name
@@ -99,7 +99,7 @@ Be polite, concise, and professional.`,
           setMessages((prev) => [...prev, {
             id: Date.now().toString() + '-sys',
             role: 'system',
-            text: '⚡ Erica is processing the booking and saving to the CRM...'
+            text: '⚡ Ericka is processing the booking and saving to the CRM...'
           }]);
 
           // Simulate API delay
@@ -162,10 +162,10 @@ Be polite, concise, and professional.`,
               Live Interactive Demo
             </div>
             <h2 className="text-4xl md:text-5xl font-display uppercase tracking-tight text-white mb-6">
-              See Erica In <span className="text-electric-blue">Action</span>
+              See Ericka In <span className="text-electric-blue">Action</span>
             </h2>
             <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              Don't just take our word for it. Try chatting with Erica right now. Pretend you're a customer with a broken AC or a burst pipe, and watch how she naturally collects your information and books the job.
+              Don't just take our word for it. Try chatting with Ericka right now. Pretend you're a customer with a broken AC or a burst pipe, and watch how she naturally collects your information and books the job.
             </p>
             
             <div className="space-y-6">
@@ -204,7 +204,7 @@ Be polite, concise, and professional.`,
                     <div className="absolute bottom-0 right-0 w-3.5 h-3.5 bg-green-500 rounded-full border-2 border-[#050b14]" />
                   </div>
                   <div>
-                    <h3 className="text-white font-bold">Erica AI</h3>
+                    <h3 className="text-white font-bold">Ericka AI</h3>
                     <p className="text-electric-blue text-xs font-black uppercase tracking-widest">Live Demo</p>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ Be polite, concise, and professional.`,
                     className="flex items-center gap-2 bg-green-500/20 text-green-400 px-4 py-2 rounded-full hover:bg-green-500/30 transition-colors text-sm font-bold"
                   >
                     <PhoneCall size={16} />
-                    <span className="hidden sm:inline">Call Erica</span>
+                    <span className="hidden sm:inline">Call Ericka</span>
                   </button>
                 )}
               </div>
@@ -249,7 +249,7 @@ Be polite, concise, and professional.`,
                   <div className="flex justify-start">
                     <div className="bg-white/10 text-white p-4 rounded-2xl rounded-bl-sm border border-white/5 flex items-center gap-3">
                       <Loader2 className="w-5 h-5 animate-spin text-electric-blue" />
-                      <span className="text-sm font-medium text-slate-300">Erica is typing...</span>
+                      <span className="text-sm font-medium text-slate-300">Ericka is typing...</span>
                     </div>
                   </div>
                 )}

@@ -21,12 +21,12 @@ export const Footer = () => {
                 <Droplets className="text-white w-6 h-6" />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-display uppercase tracking-tighter text-soft-white leading-none">Erica</span>
+                <span className="text-2xl font-display uppercase tracking-tighter text-soft-white leading-none">Ericka</span>
                 <span className="text-[8px] font-black uppercase tracking-[0.4em] text-electric-blue leading-none mt-1">AI Dispatcher</span>
               </div>
             </div>
             <p className="text-cool-gray text-sm leading-relaxed mb-10 font-medium">
-              Every Call Answered. Every Job Booked. Meet Erica: Your AI Dispatcher. Built for the trades, by people who understand the trades.
+              Every Call Answered. Every Job Booked. Meet Ericka: Your AI Dispatcher. Built for the trades, by people who understand the trades.
             </p>
             <div className="flex gap-5">
               {['Facebook', 'Instagram', 'YouTube', 'LinkedIn'].map((social) => (
@@ -81,7 +81,7 @@ export const Footer = () => {
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-cool-gray text-[10px] font-black uppercase tracking-[0.3em]">
-            © {new Date().getFullYear()} Erica AI Dispatcher. All rights reserved.
+            © {new Date().getFullYear()} Ericka AI Dispatcher. All rights reserved.
           </p>
           <p className="text-cool-gray text-[10px] font-black uppercase tracking-[0.3em] flex items-center gap-2">
             Made with <Droplets size={12} className="text-electric-blue" /> for Plumbers
